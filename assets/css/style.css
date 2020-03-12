@@ -22,8 +22,9 @@ body {
   background-image: url("https://cdn.logojoy.com/wp-content/uploads/2018/07/17142754/AdobeStock_104806545-1024x583.png"); */
 }
 
-.btn {
-  margin-top: 5px;
+#gifButtons .btn {
+  margin-top: 1%;
+  margin-right: 1%;
 }
 
 #searchBar {
