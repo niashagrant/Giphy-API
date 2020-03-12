@@ -57,7 +57,7 @@ $(document).ready(function() {
       for (var i = 0; i < response.data.length; i++) {
         $("#gifArea").prepend(`
        <div class="col-4" id="theGifs"><div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="${response.data[i].images.downsized.url}" alt="Card image cap">
+        <img class="card-img-top gif" src="${response.data[i].images.downsized.url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text"> Rating: ${response.data[i].rating}</p>
         </div>
