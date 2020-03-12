@@ -11,10 +11,7 @@
       crossorigin="anonymous"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script
-      src="https://kit.fontawesome.com/3ed87a7545.js"
-      crossorigin="anonymous"
-    ></script> -->
+
     <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/javascript/app.js"></script>
@@ -25,97 +22,38 @@
 
     <div class="card text-center">
       <div class="card-body">
-        <h5 class="card-title display-4">Card title</h5>
+        <h5
+          class="card-title display-1"
+          style="color: rgb(22, 23, 24);  margin-left: 20%; margin-right: 20%;      border-width:5px;  
+          border-style:dotted dashed;"
+        >
+          Cartoon Gifs
+        </h5>
 
         <div class="container">
           <div class="row">
-            <div class="col" id="gifButtons">
-              <!-- <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button>
-              <button type="button" class="btn btn-info">Hey Arnold</button> -->
-            </div>
+            <div class="col" id="gifButtons"></div>
           </div>
           <div class="row justify-content-md-center" id="searchBar">
-            <form class="form-inline">
+            <form class="form-inline" id="addButton">
               <input
                 class="form-control mr-sm-2"
                 type="search"
                 placeholder="Add new cartoon"
                 aria-label="Search"
+                id="cartoonInput"
               />
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              <button
+                class="btn btn-outline-dark my-2 my-sm-0"
+                type="submit"
+                id="cartoonSearch"
+              >
                 Search
               </button>
             </form>
           </div>
 
-          <div class="row" id="gifArea">
-            <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Submit</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row" id="gifArea"></div>
         </div>
       </div>
     </div>

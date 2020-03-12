@@ -34,3 +34,12 @@ body {
 #gifArea {
   margin-top: 3%;
 }
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+#theGifs {
+  margin-bottom: 2%;
+}
