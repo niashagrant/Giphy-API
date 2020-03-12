@@ -21,3 +21,15 @@ body {
   opacity: 0.7;
   background-image: url("https://cdn.logojoy.com/wp-content/uploads/2018/07/17142754/AdobeStock_104806545-1024x583.png"); */
 }
+
+.btn {
+  margin-top: 5px;
+}
+
+#searchBar {
+  margin-top: 3%;
+}
+
+#gifArea {
+  margin-top: 3%;
+}
