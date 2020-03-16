@@ -57,12 +57,25 @@ $(document).ready(function() {
       for (var i = 0; i < response.data.length; i++) {
         $("#gifArea").prepend(`
        <div class="col-4" id="theGifs"><div class="card" style="width: 18rem;">
-        <img class="card-img-top gif" src="${response.data[i].images.downsized.url}" alt="Card image cap">
+        <img class="card-img-top gif" src="${response.data[i].images.fixed_height_still.url}" alt="Card image cap">
         <div class="card-body">
           <p class="card-text"> Rating: ${response.data[i].rating}</p>
         </div>
       </div></div>`);
       }
+
+      $("#gifArea").on("click", ".gif", function() {
+        var src = $(this).attr("src");
+        if ($(this).hasClass("playing")) {
+          //stop
+          $(this).attr("src", src.replace(/\.gif/i, "_s.gif"));
+          $(this).removeClass("playing");
+        } else {
+          //play
+          $(this).addClass("playing");
+          $(this).attr("src", src.replace(/\_s.gif/i, ".gif"));
+        }
+      });
     });
   });
 });
