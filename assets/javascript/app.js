@@ -35,6 +35,7 @@ $(document).ready(function() {
       .trim();
     cartoons.push(searchBar);
     makeButtons();
+    searchBar = $("#cartoonInput").val("");
   });
   makeButtons();
 
